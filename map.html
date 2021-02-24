@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Remrating-spb | Карта компаний</title>
+</head>
+<body>
+
+    <header class="header">
+    
+        <div class="header__info header__block">
+            <div class="wrapper header__wrapper">
+                <a href="index.html" class="header__logo">
+                    <img src="./assets/images/icons/logo.svg" alt="logo">
+                </a>
+    
+                <form action='/' class="header-search">
+                    <button type="submit" class="header-search__btn">
+                        <svg class="icon search-icon">
+                            <use xlink:href="assets/images/icons/icons.svg#Search"></use>
+                        </svg>
+                    </button>
+                    <input type="text" class="header-search__input" placeholder="Введите название компании...">
+                </form>
+    
+                <a href="add-company.html" class="btn header__btn">
+                    Добавить компанию +
+                </a>
+            </div>
+        </div>
+    
+    
+        <nav class="header__nav header__block">
+            <div class="wrapper header__wrapper">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Ремонт квартир</a></li>
+                    <li class="nav__item"><a href="disigne.html" class="nav__link">Дизайн интерьеров</a></li>
+                    <li class="nav__item"><a href="map.html" class="nav__link">Карта компаний</a></li>
+                    <li class="nav__item"><a href="reviews.html" class="nav__link">Последние отзывы</a></li>
+                    <li class="nav__item">
+                        <a href="calculator.html" class="nav__link">
+                            <svg class="icon calculator-icon">
+                                <use xlink:href="assets/images/icons/icons.svg#calculator"></use>
+                            </svg>
+                            Калькулятор ремонта
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <header class="header-mobile">
+        <div class="header-mobile__top">
+            <a href="index.html" class="header__logo">
+                <img src="./assets/images/icons/logo.svg" alt="logo">
+            </a>
+    
+            <form action='/' class="header-search">
+                <button type="button" class="header-search__btn-mob">
+                    <svg class="icon search-icon">
+                        <use xlink:href="assets/images/icons/icons.svg#Search"></use>
+                    </svg>
+                </button>
+                <button type="submit" class="header-search__btn">
+                    <svg class="icon search-icon">
+                        <use xlink:href="assets/images/icons/icons.svg#Search"></use>
+                    </svg>
+                </button>
+                <input type="text" class="header-search__input" placeholder="Введите название компании...">
+                <button type="button" class="header-search__btn-close">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.20005 1.64605L8.35405 0.800049L5.00005 4.15405L1.64605 0.800049L0.800049 1.64605L4.15405 5.00005L0.800049 8.35405L1.64605 9.20005L5.00005 5.84605L8.35405 9.20005L9.20005 8.35405L5.84605 5.00005L9.20005 1.64605Z"
+                            fill="#D22E2E" />
+                    </svg>
+                </button>
+            </form>
+    
+            <button class="header-mobile__btn">
+                <span class="line"></span>
+            </button>
+        </div>
+    
+        <div class="header-mobile__nav">
+            <img src="./assets/images/icons/logo.svg" alt="logo">
+            <a href="add-company.html" class="btn header__btn">
+                Добавить компанию +
+            </a>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Ремонт квартир</a></li>
+                <li class="nav__item"><a href="disigne.html" class="nav__link">Дизайн интерьеров</a></li>
+                <li class="nav__item"><a href="map.html" class="nav__link">Карта компаний</a></li>
+                <li class="nav__item"><a href="reviews.html" class="nav__link">Последние отзывы</a></li>
+                <li class="nav__item">
+                    <a href="calculator.html" class="nav__link">
+                        <svg class="icon calculator-icon">
+                            <use xlink:href="assets/images/icons/icons.svg#calculator"></use>
+                        </svg>
+                        Калькулятор ремонта
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="routes">
+        <div class="wrapper">
+            <ul class="routes__list">
+                <li class="routes__item">
+                    <a href="#" class="routes__link routes__link_initial">
+                        <svg class="icon home-icon">
+                            <use xlink:href="assets/images/icons/icons.svg#home"></use>
+                        </svg>
+                        Главная
+                    </a>
+                </li>
+                <li class="routes__item"><a href="#" class="routes__link">Рейтинг компаний по дизайну интерьеров</a>
+                </li>
+                <li class="routes__item"><a href="#" class="routes__link">РВТ-СПб</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <section class="map-wrapper">
+        <aside class="map-sidebar">
+            <div class="map-filter">
+                <div class="map-filter__header">
+                    <div class="map-filter__btn">
+                        <span class="line-block">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </span>
+                        Фильтры
+                    </div>
+    
+                    <button class="map-filter__add" id="add-filter">
+                        +
+                    </button>
+    
+                    <button class="map-filter__clear hide" id="clear-filter">
+                        -
+                    </button>
+                </div>
+    
+                <form action="/" method="post" class="map-filter__form hide">
+                    <div class="map-filter__block" id="rating">
+                        <div class="map-filter__block-header">
+                            <div class="map-filter__name">Оценка:</div>
+                            <button class="map-filter__add" id="add-filter-rating">+</button>
+                            <button class="map-filter__clear hide" id="clear-filter-rating">-</button>
+                        </div>
+    
+                        <div class="map-filter__block-content hide">
+                            <label for="map-filter__checkbox__one" class="map-filter__label">
+                                <input type="checkbox" value="5" class="map-filter__checkbox"
+                                    id="map-filter__checkbox__one">
+    
+                                <div class="map-filter__block-rating">
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </label>
+    
+                            <label for="map-filter__checkbox__two" class="map-filter__label">
+                                <input type="checkbox" value="4" class="map-filter__checkbox"
+                                    id="map-filter__checkbox__two">
+    
+                                <div class="map-filter__block-rating">
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </label>
+    
+                            <label for="map-filter__checkbox__three" class="map-filter__label">
+                                <input type="checkbox" value="3" class="map-filter__checkbox"
+                                    id="map-filter__checkbox__three">
+    
+                                <div class="map-filter__block-rating">
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </label>
+    
+                            <label for="map-filter__checkbox__four" class="map-filter__label">
+                                <input type="checkbox" value="2" class="map-filter__checkbox"
+                                    id="map-filter__checkbox__four">
+    
+                                <div class="map-filter__block-rating">
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+    
+                                </div>
+                            </label>
+    
+                            <label for="map-filter__checkbox__five" class="map-filter__label">
+                                <input type="checkbox" value="1" class="map-filter__checkbox"
+                                    id="map-filter__checkbox__five">
+    
+                                <div class="map-filter__block-rating">
+                                    <svg class="icon star-icon">
+                                        <use xlink:href="assets/images/icons/icons.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="map-filter__block" id="metro">
+                        <div class="map-filter__block-header">
+                            <div class="map-filter__name">Метро:</div>
+                            <button class="map-filter__add" id="add-filter-metro">+</button>
+                            <button class="map-filter__clear hide" id="clear-filter-metro">-</button>
+                        </div>
+    
+                        <div class="map-filter__block-content hide">
+                            <label for="map-filter__metro-line" class="map-filter__label">
+                                <select class="map-filter__select" name="map-filter__metro-line">
+                                    <option value="1">Красная</option>
+                                    <option value="2">Синяя</option>
+                                    <option value="3">Зеленая</option>
+                                    <option value="4">Оранжева</option>
+                                    <option value="5">Фиолетовая</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <button class="map-filter__submit" id="map-filter-submit">Применить</button>
+                </form>
+    
+            </div>
+    
+            <div class="map-cards">
+                <div class="map-card">
+                    <div class="map-card__header">
+                        <div class="map-card__header-top">
+                            <a href="card.html" class="map-card__name">РВТ-СПб</a>
+                            <img src="assets/images/icons/check.svg" alt="check-icon">
+                        </div>
+    
+                        <div class="map-card__header-bottom">
+                            <div class="map-card__rating">
+                                <div class="map-card__rating-default" data-rating-count="4.5">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-5">
+            
+                                    <div class="map-card__rating-active">
+                                        <img src="./assets/images/icons/star.svg" alt="star-1">
+                                        <img src="./assets/images/icons/star.svg" alt="star-2">
+                                        <img src="./assets/images/icons/star.svg" alt="star-3">
+                                        <img src="./assets/images/icons/star.svg" alt="star-4">
+                                        <img src="./assets/images/icons/star.svg" alt="star-5">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="reviews.html" class="map-card__reviews">120 отзывов</a>
+                        </div>
+                    </div>
+    
+                    <div class="map-card__content">
+                        <div class="map-card__contact">
+                            <span class="map-card__adress">пр-кт Костромской, 48</span>
+                            <a href="tel:+7999999XXXX" class="map-card__phone">+7 (999) 999-XX-XX</a>
+                        </div>
+                        <img src="assets/images/map-card/1.jpg" alt="РВТ-СПб" class="map-card__logo">
+                    </div>
+                </div>
+    
+                <div class="map-card">
+                    <div class="map-card__header">
+                        <div class="map-card__header-top">
+                            <a href="card.html" class="map-card__name">Строй Комплект Сервис</a>
+                            <img src="assets/images/icons/check.svg" alt="check-icon">
+                        </div>
+    
+                        <div class="map-card__header-bottom">
+                            <div class="map-card__rating">
+                                <div class="map-card__rating-default" data-rating-count="4.5">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-5">
+            
+                                    <div class="map-card__rating-active">
+                                        <img src="./assets/images/icons/star.svg" alt="star-1">
+                                        <img src="./assets/images/icons/star.svg" alt="star-2">
+                                        <img src="./assets/images/icons/star.svg" alt="star-3">
+                                        <img src="./assets/images/icons/star.svg" alt="star-4">
+                                        <img src="./assets/images/icons/star.svg" alt="star-5">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="reviews.html" class="map-card__reviews">120 отзывов</a>
+                        </div>
+                    </div>
+    
+                    <div class="map-card__content">
+                        <div class="map-card__contact">
+                            <span class="map-card__adress">пр-кт Костромской, 48</span>
+                            <a href="tel:+7999999XXXX" class="map-card__phone">+7 (999) 999-XX-XX</a>
+                        </div>
+                        <img src="assets/images/map-card/2.jpg" alt="Строй Комплект Сервис" class="map-card__logo">
+                    </div>
+                </div>
+    
+                <div class="map-card">
+                    <div class="map-card__header">
+                        <div class="map-card__header-top">
+                            <a href="card.html" class="map-card__name">Строй Комплект Сервис</a>
+                            <img src="assets/images/icons/check.svg" alt="check-icon">
+                        </div>
+    
+                        <div class="map-card__header-bottom">
+                            <div class="map-card__rating">
+                                <div class="map-card__rating-default" data-rating-count="4.5">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-5">
+            
+                                    <div class="map-card__rating-active">
+                                        <img src="./assets/images/icons/star.svg" alt="star-1">
+                                        <img src="./assets/images/icons/star.svg" alt="star-2">
+                                        <img src="./assets/images/icons/star.svg" alt="star-3">
+                                        <img src="./assets/images/icons/star.svg" alt="star-4">
+                                        <img src="./assets/images/icons/star.svg" alt="star-5">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="reviews.html" class="map-card__reviews">120 отзывов</a>
+                        </div>
+                    </div>
+    
+                    <div class="map-card__content">
+                        <div class="map-card__contact">
+                            <span class="map-card__adress">пр-кт Костромской, 48</span>
+                            <a href="tel:+7999999XXXX" class="map-card__phone">+7 (999) 999-XX-XX</a>
+                        </div>
+                        <img src="assets/images/map-card/3.jpg" alt="Строй Комплект Сервис" class="map-card__logo">
+                    </div>
+                </div>
+    
+                <div class="map-card">
+                    <div class="map-card__header">
+                        <div class="map-card__header-top">
+                            <a href="card.html" class="map-card__name">Строй Комплект Сервис</a>
+                            <img src="assets/images/icons/check.svg" alt="check-icon">
+                        </div>
+    
+                        <div class="map-card__header-bottom">
+                            <div class="map-card__rating">
+                                <div class="map-card__rating-default" data-rating-count="4.5">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-5">
+            
+                                    <div class="map-card__rating-active">
+                                        <img src="./assets/images/icons/star.svg" alt="star-1">
+                                        <img src="./assets/images/icons/star.svg" alt="star-2">
+                                        <img src="./assets/images/icons/star.svg" alt="star-3">
+                                        <img src="./assets/images/icons/star.svg" alt="star-4">
+                                        <img src="./assets/images/icons/star.svg" alt="star-5">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="reviews.html" class="map-card__reviews">120 отзывов</a>
+                        </div>
+                    </div>
+    
+                    <div class="map-card__content">
+                        <div class="map-card__contact">
+                            <span class="map-card__adress">пр-кт Костромской, 48</span>
+                            <a href="tel:+7999999XXXX" class="map-card__phone">+7 (999) 999-XX-XX</a>
+                        </div>
+                        <img src="assets/images/map-card/4.jpg" alt="Строй Комплект Сервис" class="map-card__logo">
+                    </div>
+                </div>
+    
+                <div class="map-card">
+                    <div class="map-card__header">
+                        <div class="map-card__header-top">
+                            <a href="card.html" class="map-card__name">Строй Комплект Сервис</a>
+                            <img src="assets/images/icons/check.svg" alt="check-icon">
+                        </div>
+    
+                        <div class="map-card__header-bottom">
+                            <div class="map-card__rating">
+                                <div class="map-card__rating-default" data-rating-count="4.5">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-5">
+            
+                                    <div class="map-card__rating-active">
+                                        <img src="./assets/images/icons/star.svg" alt="star-1">
+                                        <img src="./assets/images/icons/star.svg" alt="star-2">
+                                        <img src="./assets/images/icons/star.svg" alt="star-3">
+                                        <img src="./assets/images/icons/star.svg" alt="star-4">
+                                        <img src="./assets/images/icons/star.svg" alt="star-5">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="reviews.html" class="map-card__reviews">120 отзывов</a>
+                        </div>
+                    </div>
+    
+                    <div class="map-card__content">
+                        <div class="map-card__contact">
+                            <span class="map-card__adress">пр-кт Костромской, 48</span>
+                            <a href="tel:+7999999XXXX" class="map-card__phone">+7 (999) 999-XX-XX</a>
+                        </div>
+                        <img src="assets/images/map-card/5.jpg" alt="Строй Комплект Сервис" class="map-card__logo">
+                    </div>
+                </div>
+    
+            </div>
+        </aside>
+    
+        <div class="map-block">
+            <img src="assets/images/map.jpg" alt="">
+        </div>
+    </section>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

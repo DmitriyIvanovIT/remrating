@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Remrating-spb | РВТ-СПб</title>
+</head>
+<body>
+
+    <header class="header">
+    
+        <div class="header__info header__block">
+            <div class="wrapper header__wrapper">
+                <a href="index.html" class="header__logo">
+                    <img src="./assets/images/icons/logo.svg" alt="logo">
+                </a>
+    
+                <form action='/' class="header-search">
+                    <button type="submit" class="header-search__btn">
+                        <svg class="icon search-icon">
+                            <use xlink:href="assets/images/icons/icons.svg#Search"></use>
+                        </svg>
+                    </button>
+                    <input type="text" class="header-search__input" placeholder="Введите название компании...">
+                </form>
+    
+                <a href="add-company.html" class="btn header__btn">
+                    Добавить компанию +
+                </a>
+            </div>
+        </div>
+    
+    
+        <nav class="header__nav header__block">
+            <div class="wrapper header__wrapper">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Ремонт квартир</a></li>
+                    <li class="nav__item"><a href="disigne.html" class="nav__link">Дизайн интерьеров</a></li>
+                    <li class="nav__item"><a href="map.html" class="nav__link">Карта компаний</a></li>
+                    <li class="nav__item"><a href="reviews.html" class="nav__link">Последние отзывы</a></li>
+                    <li class="nav__item">
+                        <a href="calculator.html" class="nav__link">
+                            <svg class="icon calculator-icon">
+                                <use xlink:href="assets/images/icons/icons.svg#calculator"></use>
+                            </svg>
+                            Калькулятор ремонта
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <header class="header-mobile">
+        <div class="header-mobile__top">
+            <a href="index.html" class="header__logo">
+                <img src="./assets/images/icons/logo.svg" alt="logo">
+            </a>
+    
+            <form action='/' class="header-search">
+                <button type="button" class="header-search__btn-mob">
+                    <svg class="icon search-icon">
+                        <use xlink:href="assets/images/icons/icons.svg#Search"></use>
+                    </svg>
+                </button>
+                <button type="submit" class="header-search__btn">
+                    <svg class="icon search-icon">
+                        <use xlink:href="assets/images/icons/icons.svg#Search"></use>
+                    </svg>
+                </button>
+                <input type="text" class="header-search__input" placeholder="Введите название компании...">
+                <button type="button" class="header-search__btn-close">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.20005 1.64605L8.35405 0.800049L5.00005 4.15405L1.64605 0.800049L0.800049 1.64605L4.15405 5.00005L0.800049 8.35405L1.64605 9.20005L5.00005 5.84605L8.35405 9.20005L9.20005 8.35405L5.84605 5.00005L9.20005 1.64605Z"
+                            fill="#D22E2E" />
+                    </svg>
+                </button>
+            </form>
+    
+            <button class="header-mobile__btn">
+                <span class="line"></span>
+            </button>
+        </div>
+    
+        <div class="header-mobile__nav">
+            <img src="./assets/images/icons/logo.svg" alt="logo">
+            <a href="add-company.html" class="btn header__btn">
+                Добавить компанию +
+            </a>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Ремонт квартир</a></li>
+                <li class="nav__item"><a href="disigne.html" class="nav__link">Дизайн интерьеров</a></li>
+                <li class="nav__item"><a href="map.html" class="nav__link">Карта компаний</a></li>
+                <li class="nav__item"><a href="reviews.html" class="nav__link">Последние отзывы</a></li>
+                <li class="nav__item">
+                    <a href="calculator.html" class="nav__link">
+                        <svg class="icon calculator-icon">
+                            <use xlink:href="assets/images/icons/icons.svg#calculator"></use>
+                        </svg>
+                        Калькулятор ремонта
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="routes">
+        <div class="wrapper">
+            <ul class="routes__list">
+                <li class="routes__item">
+                    <a href="#" class="routes__link routes__link_initial">
+                        <svg class="icon home-icon">
+                            <use xlink:href="assets/images/icons/icons.svg#home"></use>
+                        </svg>
+                        Главная
+                    </a>
+                </li>
+                <li class="routes__item"><a href="#" class="routes__link">Рейтинг компаний по дизайну интерьеров</a>
+                </li>
+                <li class="routes__item"><a href="#" class="routes__link">РВТ-СПб</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper container">
+        <main class="main">
+            
+            <section class="company-header">
+                <div class="company-header__info">
+                    <a href="card.html" class="company-card__logo company-header__logo">
+                        <img src="assets/images/company/rvt.jpg" alt="РВТ-СПб">
+                    </a>
+                    <div class="company-card__header-info">
+                        <div class="company-card__header-info__top">
+                            <a href="card.html" class="company-card__name company-header__name">РВТ-СПб</a>
+                            <img src="assets/images/icons/check.svg" alt="check-icon">
+                        </div>
+            
+                        <div class="company-card__header-info__bottom">
+                            <div class="company-card__rating company-header__rating">
+                                <div class="company-card__rating-default" data-rating-count="4.5">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-5">
+            
+                                    <div class="company-card__rating-active">
+                                        <img src="./assets/images/icons/star.svg" alt="star-1">
+                                        <img src="./assets/images/icons/star.svg" alt="star-2">
+                                        <img src="./assets/images/icons/star.svg" alt="star-3">
+                                        <img src="./assets/images/icons/star.svg" alt="star-4">
+                                        <img src="./assets/images/icons/star.svg" alt="star-5">
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <span class="company-card__reviews-link company-header__reviews-link">120 отзывов</span>
+            
+                            <span class="company-card__position company-header__position">
+                                №1 из 76
+                            </span>
+            
+                            <img class="company-card__info-icon company-header__info-icon" src="assets/images/icons/mdi_alert.svg"
+                                alt="mdi_alert">
+                        </div>
+                    </div>
+                    <div class="company-card__balls">
+                        <p class="company-card__balls-count">2712</p>
+                        <p class="company-card__balls-text">Баллов</p>
+                    </div>
+                </div>
+            
+                <div class="company-header__map">
+                    <img src="assets/images/map-card.jpg" alt="123">
+                    <button class="company-header__map-btn">
+                        <img src="assets/images/icons/map-icon.svg" alt="map-icon">
+                        Проложить маршрут
+                    </button>
+                </div>
+            </section>
+            
+            <div class="phone-company">
+                <h2 class="phone-company__title">Обратиться в компанию</h2>
+                <a href="tel:+7999999XXXX" class="phone-company__link">+7 (999) 999-XX-XX</a>
+            </div>
+            
+            <section class="info">
+                <div class="main-info">
+                    <div class="main-info__content">
+                        <h2 class="main-info__title">Основная информация</h2>
+            
+                        <div class="company-card__location main-info__location">
+                            <div class="company-card__merto-block">
+                                <span class="company-card__metro-stantion blue">Удельная</span>
+                            </div>
+                        </div>
+            
+                        <div class="main-info__specifications">
+                            <div class="main-info__specifications-block">
+                                <span class="main-info__specifications-name">Адресс: </span>
+                                <span class="main-info__specifications-text">Пр-кт Костромской, 48</span>
+                            </div>
+            
+                            <div class="main-info__specifications-block">
+                                <span class="main-info__specifications-name">Опыт: </span>
+                                <span class="main-info__specifications-text">На рынке с 2011 года</span>
+                            </div>
+            
+                            <div class="main-info__specifications-block">
+                                <span class="main-info__specifications-name">Цены: </span>
+                                <span class="main-info__specifications-text">От 4500 р/м2</span>
+                            </div>
+                        </div>
+                        <a href="https://remontvspb.ru/" target="_blank" class="company-card__phone main-info__site">
+                            <img src="assets/images/icons/dashicons_admin-site-alt3.svg" alt="planet">
+                            Сайт компании
+                        </a>
+                    </div>
+                    <div class="main-info__contact">
+                        <h3 class="main-info__contact-title">Связь с компанией:</h3>
+            
+                        <div class="company-card__phone main-info__email" data-email="rvt@remontvspb.ru">
+                            <svg class="icon">
+                                <use xlink:href="assets/images/icons/icons.svg#email"></use>
+                            </svg>
+                            Почта компании
+                        </div>
+            
+                        <a href="tel:+7999999XXXX" class="company-card__phone main-info__phone">+7 (999) 999-XX-XX</a>
+            
+                        <div class="company-card__work main-info__work">Ежедневно с 10:00 по 19:00</div>
+                    </div>
+                </div>
+            
+                <div class="info-rating">
+                    <div class="info-rating__block">
+                        <div class="info-rating__block-text">
+                            <h3 class="info-rating__block-title">Рейтинги</h3>
+                            <span class="info-rating__block-reviews">120 отзывов</span>
+                        </div>
+                        <div class="reviews-block__rating-block info-rating__block-item">
+                            <h4 class="reviews-block__rating-name">Сроки выполнения:</h4>
+            
+                            <div class="star-rating reviews-block__star-rating">
+                                <span class="star-rating__count">4.76</span>
+                                <div class="star-rating__default">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-5">
+            
+                                    <div class="star-rating__active">
+                                        <img src="./assets/images/icons/star.svg" alt="star-1">
+                                        <img src="./assets/images/icons/star.svg" alt="star-2">
+                                        <img src="./assets/images/icons/star.svg" alt="star-3">
+                                        <img src="./assets/images/icons/star.svg" alt="star-4">
+                                        <img src="./assets/images/icons/star.svg" alt="star-5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="reviews-block__rating-block info-rating__block-item">
+                            <h4 class="reviews-block__rating-name">Цены:</h4>
+            
+                            <div class="star-rating reviews-block__star-rating">
+                                <span class="star-rating__count">4.76</span>
+                                <div class="star-rating__default">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-5">
+            
+                                    <div class="star-rating__active">
+                                        <img src="./assets/images/icons/star.svg" alt="star-1">
+                                        <img src="./assets/images/icons/star.svg" alt="star-2">
+                                        <img src="./assets/images/icons/star.svg" alt="star-3">
+                                        <img src="./assets/images/icons/star.svg" alt="star-4">
+                                        <img src="./assets/images/icons/star.svg" alt="star-5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="reviews-block__rating-block info-rating__block-item">
+                            <h4 class="reviews-block__rating-name">Качество ремонта:</h4>
+            
+                            <div class="star-rating reviews-block__star-rating">
+                                <span class="star-rating__count">4.76</span>
+                                <div class="star-rating__default">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-5">
+            
+                                    <div class="star-rating__active">
+                                        <img src="./assets/images/icons/star.svg" alt="star-1">
+                                        <img src="./assets/images/icons/star.svg" alt="star-2">
+                                        <img src="./assets/images/icons/star.svg" alt="star-3">
+                                        <img src="./assets/images/icons/star.svg" alt="star-4">
+                                        <img src="./assets/images/icons/star.svg" alt="star-5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="reviews-block__rating-block info-rating__block-item">
+                            <h4 class="reviews-block__rating-name">Качество взаимодействия:</h4>
+            
+                            <div class="star-rating reviews-block__star-rating">
+                                <span class="star-rating__count">4.76</span>
+                                <div class="star-rating__default">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star-default.svg" alt="star-5">
+            
+                                    <div class="star-rating__active">
+                                        <img src="./assets/images/icons/star.svg" alt="star-1">
+                                        <img src="./assets/images/icons/star.svg" alt="star-2">
+                                        <img src="./assets/images/icons/star.svg" alt="star-3">
+                                        <img src="./assets/images/icons/star.svg" alt="star-4">
+                                        <img src="./assets/images/icons/star.svg" alt="star-5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="company-card__content-recomend low info-rating__recomend">
+                        <div class="company-card__progress info-rating__progress">
+                            <svg class="progress-ring" data-percent="25">
+                                <circle class="progress-ring__default" cx="44" cy="44" r="41" />
+                                <circle class="progress-ring__circle" cx="44" cy="44" r="41" />
+            
+                            </svg>
+            
+                            <span class="company-card__progress-percent info-rating__percent">
+                                25%
+                            </span>
+                        </div>
+            
+                        <span class="company-card__content-recomend__text info-rating__recomend-text">Рекомендуют</span>
+                        <span class="company-card__content-recomend__reviews info-rating__reviews">26 отзывов</span>
+                    </div>
+                </div>
+            
+                <div class="description">
+                    <div class="description__title">Описание:</div>
+                    <div class="description__text-block">
+                        Компания «РВТ» - лидер рынка ремонтных работ Санкт-Петербурга.<br>
+                        5 причин выбрать нас:<br><br>
+            
+                        1. Большой штат узкопрофильных специалистов: плиточников, каменщиков, маляров, сантехников и электриков.<br>
+                        2. Качественно и в срок выполняем весь спектр необходимых услуг от дизайн-проекта до ремонта под ключ.<br>
+                        3. Сами закупим и привезём необходимые материалы – по низким оптовым ценам.<br>
+                        4. Поэтапная оплата работы – без предоплаты!<br>
+                        5. Гарантия 2 года на все виды работ...<br>
+                        <br><br>
+                        Компания «РВТ» - лидер рынка ремонтных работ Санкт-Петербурга.<br>
+                        5 причин выбрать нас:<br><br>
+            
+                        1. Большой штат узкопрофильных специалистов: плиточников, каменщиков, маляров, сантехников и электриков.<br>
+                        2. Качественно и в срок выполняем весь спектр необходимых услуг от дизайн-проекта до ремонта под ключ.<br>
+                        3. Сами закупим и привезём необходимые материалы – по низким оптовым ценам.<br>
+                        4. Поэтапная оплата работы – без предоплаты!<br>
+                        5. Гарантия 2 года на все виды работ...<br>
+                    </div>
+                </div>
+            </section>
+            
+            <form actiont='/' class="feedback">
+                <div class="feedback__left">
+                    <h2 class="feedback__title">Оставить отзыв:</h2>
+                    <label for="username" class="feedback__label">
+                        <span class="feedback__input-name required">Ваше имя:</span>
+                        <input type="text" required name="username" id="username" class="feedback__input" placeholder="Иванов Иван">
+                    </label>
+            
+                    <label for="email" class="feedback__label">
+                        <span class="feedback__input-name required">Почта:</span>
+                        <input type="email" required name="email" id="email" class="feedback__input"
+                            placeholder="Example@gmail.com">
+                    </label>
+            
+                    <label for="review-title" class="feedback__label">
+                        <span class="feedback__input-name">Заголовок:</span>
+                        <input type="text" name="review-title" id="review-title" class="feedback__input"
+                            placeholder="Потрясающая компания...">
+                    </label>
+            
+                    <label for="review-text" class="feedback__label">
+                        <span class="feedback__input-name required">Ваш отзыв:</span>
+                        <textarea name="review-text" id="review-text" class="feedback__textarea" maxlength='1000'
+                            placeholder="Начните свой отзыв с Заголовка..." required></textarea>
+                    </label>
+                </div>
+            
+                <div class="feedback__right">
+                    <h3 class="feedback__subtitle">Оцените:</h3>
+            
+                    <div class="feedback__account">
+                        <span class="feedback__account-title">Сроки выполнения:</span>
+                        <div class="feedback__account-rating account-period">
+                            <input type="radio" value="5" class="feedback__account-item" name="period" id="period-5">
+                            <label for="period-5" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="4" class="feedback__account-item" name="period" id="period-4">
+                            <label for="period-4" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="3" class="feedback__account-item" name="period" id="period-3">
+                            <label for="period-3" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="2" class="feedback__account-item" name="period" id="period-2">
+                            <label for="period-2" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="1" class="feedback__account-item" name="period" id="period-1">
+                            <label for="period-1" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+            
+                    <div class="feedback__account">
+                        <span class="feedback__account-title">Цены:</span>
+                        <div class="feedback__account-rating account-price">
+                            <input type="radio" value="5" class="feedback__account-item" name="price" id="price-5">
+                            <label for="price-5" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="4" class="feedback__account-item" name="price" id="price-4">
+                            <label for="price-4" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="3" class="feedback__account-item" name="price" id="price-3">
+                            <label for="price-3" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="2" class="feedback__account-item" name="price" id="price-2">
+                            <label for="price-2" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="1" class="feedback__account-item" name="price" id="price-1">
+                            <label for="price-1" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+            
+                    <div class="feedback__account">
+                        <span class="feedback__account-title">Качество ремонта:</span>
+                        <div class="feedback__account-rating account-quality-repairs">
+                            <input type="radio" value="5" class="feedback__account-item" name="quality-repairs"
+                                id="quality-repairs-5">
+                            <label for="quality-repairs-5" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="4" class="feedback__account-item" name="quality-repairs"
+                                id="quality-repairs-4">
+                            <label for="quality-repairs-4" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="3" class="feedback__account-item" name="quality-repairs"
+                                id="quality-repairs-3">
+                            <label for="quality-repairs-3" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="2" class="feedback__account-item" name="quality-repairs"
+                                id="quality-repairs-2">
+                            <label for="quality-repairs-2" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="1" class="feedback__account-item" name="quality-repairs"
+                                id="quality-repairs-1">
+                            <label for="quality-repairs-1" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+            
+                    <div class="feedback__account">
+                        <span class="feedback__account-title">Качество взаимодействия:</span>
+                        <div class="feedback__account-rating account-quality">
+                            <input type="radio" value="5" class="feedback__account-item" name="quality" id="quality-5">
+                            <label for="quality-5" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="4" class="feedback__account-item" name="quality" id="quality-4">
+                            <label for="quality-4" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="3" class="feedback__account-item" name="quality" id="quality-3">
+                            <label for="quality-3" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="2" class="feedback__account-item" name="quality" id="quality-2">
+                            <label for="quality-2" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                            <input type="radio" value="1" class="feedback__account-item" name="quality" id="quality-1">
+                            <label for="quality-1" class="feedback__account-label">
+                                <svg class="icon star-icon">
+                                    <use xlink:href="assets/images/icons/icons.svg#star-input"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+            
+                    <div class="feedback__switch-block">
+                        <span class="feedback__switch-text">Рекомендую компанию:</span>
+                        <div class="recomend-checkbox">
+                            <label for="recomend"></label>
+                            <input type="checkbox" name="recomend" id="recomend">
+                        </div>
+                    </div>
+            
+                    <label for="file-img" class="feedback__file">
+                        <div class="feedback__file-img">
+                            <img src="assets/images/icons/import-file.svg" alt="import-file-icon">
+                        </div>
+                        <span class="feedback__file-text">
+                            Нажмите, чтобы выбрать файлы.
+                            Или перетащите их сюда
+                        </span>
+                        <input type="file" name="file-img" id="file-img" class="feedback__file-input" multiple accept="image/jpeg,image/png,image/gif">
+                    </label>
+                    <div class="feedback__files">
+                    </div>
+                </div>
+                <div class="feedback__submit">
+                    <div class="feedback__chekbox">
+                        <div class="privacy-policy">
+                            <input type="checkbox" id="privacy-policy-chekbox" name="privacy-policy-chekbox">
+                            <label for="privacy-policy-chekbox"></label>
+                        </div>
+                        <span class="feedback__chekbox-text">
+                            Даю согласие на обработку моих <a href="#" class="feedback__chekbox-link">персональных данных</a>
+                        </span>
+                    </div>
+            
+                    <button type="submit" class="feedback__btn disabled">Оставить отзыв</button>
+                </div>
+            </form>
+            
+            <section class="company-reviews">
+                <div class="company-reviews__header">
+                    <h3 class="info-rating__block-title">Отзывы</h3>
+                    <span class="info-rating__block-reviews">120 отзывов</span>
+                </div>
+            
+                <div class="company-review">
+                    <div class="reviews-card__content">
+                        <div class="reviews-block">
+                            <div class="reviews-block__info">
+                                <div class="reviews-block__info-header">
+                                    <span class="reviews-block__username">Сергей К.</span>
+                                    <time class="reviews-block__time" data-time="2020.11.12"></time>
+                                </div>
+                                <p class="reviews-block__comment">
+                                    Комната в квартире очень давно требовала ремонта. После длительных поисков компании, выбор пал
+                                    на
+                                    «РВТ-СПб». Хорошие рейтинги подкупили. Если честно. очень боялась, что могут все испортить
+                                    некачественной работой, но к счастью, мастера оказались толковыми. Аккуратно пошпаклевали стены
+                                    и
+                                    поклеили обои. Стык в стык, как надо, без пузырей и разводов клея. И что самое главное, по
+                                    приемлемым ценам. Буду рекомендовать компанию своей свекрови, у неё тоже намечается ремонт в
+                                    скором
+                                    времени.
+                                </p>
+                            </div>
+                            <div class="reviews-block__rating">
+                                <h3 class="reviews-block__rating-title">Оценка пользователя:</h3>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Сроки выполнения:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Цены:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Качество ремонта:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Качество взаимодействия:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-card__footer">
+                        <div class="img-slider-block">
+                            <h3 class="img-slider-block__title">Фотографии:</h3>
+            
+                            <div class="img-slider-block__wrapp">
+                                <div class="img-slider-block__container swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/1.jpg"
+                                                alt="slide 1"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/2.jpg"
+                                                alt="slide 2"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/3.jpg"
+                                                alt="slide 3"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/4.jpg"
+                                                alt="slide 4"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/1.jpg"
+                                                alt="slide 5"></div>
+                                    </div>
+                                </div>
+            
+                                <div class="img-slider-block__buttons">
+                                    <div class="img-slider-block__next slider__btn">
+                                        <svg class="icon">
+                                            <use xlink:href="assets/images/icons/icons.svg#arrow-slider"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="img-slider-block__prev slider__btn">
+                                        <svg class="icon" style="transform: rotate(180deg);">
+                                            <use xlink:href="assets/images/icons/icons.svg#arrow-slider"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="company-review">
+                    <div class="reviews-card__content">
+                        <div class="reviews-block">
+                            <div class="reviews-block__info">
+                                <div class="reviews-block__info-header">
+                                    <span class="reviews-block__username">Сергей К.</span>
+                                    <time class="reviews-block__time" data-time="2020.11.12"></time>
+                                </div>
+                                <p class="reviews-block__comment">
+                                    Комната в квартире очень давно требовала ремонта. После длительных поисков компании, выбор пал
+                                    на
+                                    «РВТ-СПб». Хорошие рейтинги подкупили. Если честно. очень боялась, что могут все испортить
+                                    некачественной работой, но к счастью, мастера оказались толковыми. Аккуратно пошпаклевали стены
+                                    и
+                                    поклеили обои. Стык в стык, как надо, без пузырей и разводов клея. И что самое главное, по
+                                    приемлемым ценам. Буду рекомендовать компанию своей свекрови, у неё тоже намечается ремонт в
+                                    скором
+                                    времени.
+                                </p>
+                            </div>
+                            <div class="reviews-block__rating">
+                                <h3 class="reviews-block__rating-title">Оценка пользователя:</h3>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Сроки выполнения:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Цены:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Качество ремонта:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Качество взаимодействия:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-card__footer">
+                        <div class="img-slider-block">
+                            <h3 class="img-slider-block__title">Фотографии:</h3>
+            
+                            <div class="img-slider-block__wrapp">
+                                <div class="img-slider-block__container swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/1.jpg"
+                                                alt="slide 1"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/2.jpg"
+                                                alt="slide 2"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/3.jpg"
+                                                alt="slide 3"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/4.jpg"
+                                                alt="slide 4"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/1.jpg"
+                                                alt="slide 5"></div>
+                                    </div>
+                                </div>
+            
+                                <div class="img-slider-block__buttons">
+                                    <div class="img-slider-block__next slider__btn">
+                                        <svg class="icon">
+                                            <use xlink:href="assets/images/icons/icons.svg#arrow-slider"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="img-slider-block__prev slider__btn">
+                                        <svg class="icon" style="transform: rotate(180deg);">
+                                            <use xlink:href="assets/images/icons/icons.svg#arrow-slider"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="company-review">
+                    <div class="reviews-card__content">
+                        <div class="reviews-block">
+                            <div class="reviews-block__info">
+                                <div class="reviews-block__info-header">
+                                    <span class="reviews-block__username">Сергей К.</span>
+                                    <time class="reviews-block__time" data-time="2020.11.12"></time>
+                                </div>
+                                <p class="reviews-block__comment">
+                                    Комната в квартире очень давно требовала ремонта. После длительных поисков компании, выбор пал
+                                    на
+                                    «РВТ-СПб». Хорошие рейтинги подкупили. Если честно. очень боялась, что могут все испортить
+                                    некачественной работой, но к счастью, мастера оказались толковыми. Аккуратно пошпаклевали стены
+                                    и
+                                    поклеили обои. Стык в стык, как надо, без пузырей и разводов клея. И что самое главное, по
+                                    приемлемым ценам. Буду рекомендовать компанию своей свекрови, у неё тоже намечается ремонт в
+                                    скором
+                                    времени.<br>
+                                    Комната в квартире очень давно требовала ремонта. После длительных поисков компании, выбор пал
+                                    на
+                                    «РВТ-СПб». Хорошие рейтинги подкупили. Если честно. очень боялась, что могут все испортить
+                                    некачественной работой, но к счастью, мастера оказались толковыми. Аккуратно пошпаклевали стены
+                                    и
+                                    поклеили обои. Стык в стык, как надо, без пузырей и разводов клея. И что самое главное, по
+                                    приемлемым ценам. Буду рекомендовать компанию своей свекрови, у неё тоже намечается ремонт в
+                                    скором
+                                    времени.
+                                </p>
+                            </div>
+                            <div class="reviews-block__rating">
+                                <h3 class="reviews-block__rating-title">Оценка пользователя:</h3>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Сроки выполнения:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Цены:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Качество ремонта:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Качество взаимодействия:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-card__footer">
+                        <div class="img-slider-block">
+                            <h3 class="img-slider-block__title">Фотографии:</h3>
+            
+                            <div class="img-slider-block__wrapp">
+                                <div class="img-slider-block__container swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/1.jpg"
+                                                alt="slide 1"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/2.jpg"
+                                                alt="slide 2"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/3.jpg"
+                                                alt="slide 3"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/4.jpg"
+                                                alt="slide 4"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/1.jpg"
+                                                alt="slide 5"></div>
+                                    </div>
+                                </div>
+            
+                                <div class="img-slider-block__buttons">
+                                    <div class="img-slider-block__next slider__btn">
+                                        <svg class="icon">
+                                            <use xlink:href="assets/images/icons/icons.svg#arrow-slider"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="img-slider-block__prev slider__btn">
+                                        <svg class="icon" style="transform: rotate(180deg);">
+                                            <use xlink:href="assets/images/icons/icons.svg#arrow-slider"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="company-review">
+                    <div class="reviews-card__content">
+                        <div class="reviews-block">
+                            <div class="reviews-block__info">
+                                <div class="reviews-block__info-header">
+                                    <span class="reviews-block__username">Сергей К.</span>
+                                    <time class="reviews-block__time" data-time="2020.11.12"></time>
+                                </div>
+                                <p class="reviews-block__comment">
+                                    Комната в квартире очень давно требовала ремонта. После длительных поисков компании, выбор пал
+                                    на
+                                    «РВТ-СПб». Хорошие рейтинги подкупили. Если честно. очень боялась, что могут все испортить
+                                    некачественной работой, но к счастью, мастера оказались толковыми. Аккуратно пошпаклевали стены
+                                    и
+                                    поклеили обои. Стык в стык, как надо, без пузырей и разводов клея. И что самое главное, по
+                                    приемлемым ценам. Буду рекомендовать компанию своей свекрови, у неё тоже намечается ремонт в
+                                    скором
+                                    времени.
+                                </p>
+                            </div>
+                            <div class="reviews-block__rating">
+                                <h3 class="reviews-block__rating-title">Оценка пользователя:</h3>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Сроки выполнения:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Цены:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Качество ремонта:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="reviews-block__rating-block">
+                                    <h4 class="reviews-block__rating-name">Качество взаимодействия:</h4>
+            
+                                    <div class="star-rating reviews-block__star-rating">
+                                        <span class="star-rating__count">4.76</span>
+                                        <div class="star-rating__default">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                            <img src="./assets/images/icons/star-default.svg" alt="star-5">
+                    
+                                            <div class="star-rating__active">
+                                                <img src="./assets/images/icons/star.svg" alt="star-1">
+                                                <img src="./assets/images/icons/star.svg" alt="star-2">
+                                                <img src="./assets/images/icons/star.svg" alt="star-3">
+                                                <img src="./assets/images/icons/star.svg" alt="star-4">
+                                                <img src="./assets/images/icons/star.svg" alt="star-5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-card__footer">
+                        <div class="img-slider-block">
+                            <h3 class="img-slider-block__title">Фотографии:</h3>
+            
+                            <div class="img-slider-block__wrapp">
+                                <div class="img-slider-block__container swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/1.jpg"
+                                                alt="slide 1"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/2.jpg"
+                                                alt="slide 2"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/3.jpg"
+                                                alt="slide 3"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/4.jpg"
+                                                alt="slide 4"></div>
+                                        <div class="swiper-slide img-slider-block__slide"><img src="assets/images/slider/1.jpg"
+                                                alt="slide 5"></div>
+                                    </div>
+                                </div>
+            
+                                <div class="img-slider-block__buttons">
+                                    <div class="img-slider-block__next slider__btn">
+                                        <svg class="icon">
+                                            <use xlink:href="assets/images/icons/icons.svg#arrow-slider"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="img-slider-block__prev slider__btn">
+                                        <svg class="icon" style="transform: rotate(180deg);">
+                                            <use xlink:href="assets/images/icons/icons.svg#arrow-slider"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="overlay">
+                <div class="modal">
+                    <img src="assets/images/layer.jpg" alt="layer" class="modal__img">
+                    <span class="modal__title">Успешно</span>
+                    <p class="modal__text">
+                        Вы успшено отправили отзыв. Мы опубликуем его, после проверки модераторами. Обычно это занимает до 2 дней 
+                    </p>
+                    <button class="modal__close">Отлично</button>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="rating">
+                <div class="rating__header">
+                    <h2 class="rating__title">Лучшие компании по ремонту</h2>
+                </div>
+                <div class="rating__body">
+                    <a href="card.html" class="company">
+                        <img src="assets/images/company/rvt.jpg" alt="рвт" class="company__img">
+                        <span class="company__name">РВТ-СПб</span>
+                        <div class="star-rating">
+                            <span class="star-rating__count">4.92</span>
+                            <div class="star-rating__default">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-5">
+        
+                                <div class="star-rating__active">
+                                    <img src="./assets/images/icons/star.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star.svg" alt="star-5">
+                                </div>
+                            </div>
+        
+                        </div>
+                    </a>
+        
+                    <a href="card.html" class="company">
+                        <img src="assets/images/company/bestView.jpg" alt="Лучший вид" class="company__img">
+                        <span class="company__name">Лучший вид</span>
+                        <div class="star-rating">
+                            <span class="star-rating__count">4.8</span>
+                            <div class="star-rating__default">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-5">
+        
+                                <div class="star-rating__active">
+                                    <img src="./assets/images/icons/star.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star.svg" alt="star-5">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <a href="card.html" class="company">
+                        <img src="assets/images/company/buildCompany.jpg" alt="Строй Комплект Сервис" class="company__img">
+                        <span class="company__name">Строй Комплект Сервис</span>
+                        <div class="star-rating">
+                            <span class="star-rating__count">4.76</span>
+                            <div class="star-rating__default">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-5">
+        
+                                <div class="star-rating__active">
+                                    <img src="./assets/images/icons/star.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star.svg" alt="star-5">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <a href="card.html" class="company">
+                        <img src="assets/images/company/buildCompany.jpg" alt="Строй Комплект Сервис" class="company__img">
+                        <span class="company__name">Строй Комплект Сервис</span>
+                        <div class="star-rating">
+                            <span class="star-rating__count">4.76</span>
+                            <div class="star-rating__default">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-5">
+        
+                                <div class="star-rating__active">
+                                    <img src="./assets/images/icons/star.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star.svg" alt="star-5">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <a href="card.html" class="company">
+                        <img src="assets/images/company/buildCompany.jpg" alt="Строй Комплект Сервис" class="company__img">
+                        <span class="company__name">Строй Комплект Сервис</span>
+                        <div class="star-rating">
+                            <span class="star-rating__count">4.5</span>
+                            <div class="star-rating__default">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-5">
+        
+                                <div class="star-rating__active">
+                                    <img src="./assets/images/icons/star.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star.svg" alt="star-5">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <a href="card.html" class="company">
+                        <img src="assets/images/company/buildCompany.jpg" alt="Строй Комплект Сервис" class="company__img">
+                        <span class="company__name">Строй Комплект Сервис</span>
+                        <div class="star-rating">
+                            <span class="star-rating__count">4</span>
+                            <div class="star-rating__default">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-5">
+        
+                                <div class="star-rating__active">
+                                    <img src="./assets/images/icons/star.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star.svg" alt="star-5">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <a href="card.html" class="company">
+                        <img src="assets/images/company/buildCompany.jpg" alt="Строй Комплект Сервис" class="company__img">
+                        <span class="company__name">Строй Комплект Сервис</span>
+                        <div class="star-rating">
+                            <span class="star-rating__count">4.76</span>
+                            <div class="star-rating__default">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-5">
+        
+                                <div class="star-rating__active">
+                                    <img src="./assets/images/icons/star.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star.svg" alt="star-5">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <a href="card.html" class="company">
+                        <img src="assets/images/company/buildCompany.jpg" alt="Строй Комплект Сервис" class="company__img">
+                        <span class="company__name">Строй Комплект Сервис</span>
+                        <div class="star-rating">
+                            <span class="star-rating__count">4.76</span>
+                            <div class="star-rating__default">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-5">
+        
+                                <div class="star-rating__active">
+                                    <img src="./assets/images/icons/star.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star.svg" alt="star-5">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <a href="card.html" class="company">
+                        <img src="assets/images/company/buildCompany.jpg" alt="Строй Комплект Сервис" class="company__img">
+                        <span class="company__name">Строй Комплект Сервис</span>
+                        <div class="star-rating">
+                            <span class="star-rating__count">4.76</span>
+                            <div class="star-rating__default">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-5">
+        
+                                <div class="star-rating__active">
+                                    <img src="./assets/images/icons/star.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star.svg" alt="star-5">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <a href="card.html" class="company">
+                        <img src="assets/images/company/buildCompany.jpg" alt="Строй Комплект Сервис" class="company__img">
+                        <span class="company__name">Строй Комплект Сервис</span>
+                        <div class="star-rating">
+                            <span class="star-rating__count">4.76</span>
+                            <div class="star-rating__default">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-1">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-2">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-3">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-4">
+                                <img src="./assets/images/icons/star-default.svg" alt="star-5">
+        
+                                <div class="star-rating__active">
+                                    <img src="./assets/images/icons/star.svg" alt="star-1">
+                                    <img src="./assets/images/icons/star.svg" alt="star-2">
+                                    <img src="./assets/images/icons/star.svg" alt="star-3">
+                                    <img src="./assets/images/icons/star.svg" alt="star-4">
+                                    <img src="./assets/images/icons/star.svg" alt="star-5">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- <div class="baner baner-exchange">
+                <div class="baner__text">
+                    <h3 class="baner__subtitle">Оставь заявку на ремонт квартиры</h3>
+                    <h2 class="baner__title">БИРЖА ЗАКАЗОВ</h2>
+                </div>
+                <a href="#" class="baner__link">
+                    <span class="arrow-blok">
+                        <svg class="icon arrow-icon">
+                            <use xlink:href="assets/images/icons/icons.svg#arrow"></use>
+                        </svg>
+                    </span>
+                    Оставить заявку
+                </a>
+            </div> -->
+        
+            <a href="map.html" class="baner baner-cart">
+                <div class="baner__text">
+                    <h3 class="baner__subtitle baner__subtitle_cart">Весь ремонт и дизайн квартир Санкт-Петербурга</h3>
+                    <h2 class="baner__title">Карта Компаний</h2>
+                </div>
+                <span class="baner__link">
+                    <span class="arrow-blok">
+                        <svg class="icon arrow-icon">
+                            <use xlink:href="assets/images/icons/icons.svg#arrow"></use>
+                        </svg>
+                    </span>
+        
+                    Перейти к карте
+                </span>
+            </a>
+        
+            <div class="phone-company">
+                <h2 class="phone-company__title">Обратиться в компанию</h2>
+                <a href="tel:+7999999XXXX" class="phone-company__link">+7 (999) 999-XX-XX</a>
+            </div>
+        </aside>    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
+</body>
+</html>
