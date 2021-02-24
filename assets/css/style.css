@@ -208,6 +208,13 @@ ul {
     width: 100%;
 }
 
+@media (max-width: 992px) {
+    .row {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
 .header {
     width: 100vw;
     display: -ms-flexbox;
@@ -4572,5 +4579,217 @@ ul {
         line-height: 17px;
         font-family: "GilroySemibold", sans-serif;
         border-radius: 4px;
+    }
+}
+
+.footer {
+    background: #4B4E53;
+    width: 100%;
+    padding-top: 52px;
+    padding-bottom: 25px;
+}
+
+.footer__logo {
+    margin-bottom: 37px;
+}
+
+@media (max-width: 576px) {
+    .footer__logo {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer__logo img {
+        width: 209px;
+        height: 50px;
+    }
+}
+
+.footer__wraper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1277px;
+    width: 95%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    .footer__wraper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+}
+
+.footer__left {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+@media (max-width: 576px) {
+    .footer__left {
+        margin-bottom: 38px;
+    }
+}
+
+.footer__btn {
+    width: 180px;
+    height: 38px;
+    border-radius: 4px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #4496F6;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "GilroySemibold", sans-serif;
+    color: #FFFFFF;
+}
+
+.footer__nav {
+    width: 465px;
+    margin-right: 100px;
+}
+
+@media (max-width: 992px) {
+    .footer__nav {
+        width: 292px;
+    }
+}
+
+.footer__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    .footer__list {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+}
+
+.footer__item {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+    .footer__item {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer__item:nth-child(1) {
+        -ms-flex-order: 0;
+        order: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer__item:nth-child(2) {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer__item:nth-child(2) {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer__item:nth-child(3) {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer__item:nth-child(3) {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer__item:nth-child(4) {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer__item:nth-child(4) {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+}
+
+.footer__item:last-child {
+    margin-right: auto;
+    margin-left: 42px;
+}
+
+@media (max-width: 992px) {
+    .footer__item:last-child {
+        margin-left: 0;
+        -ms-flex-order: 4;
+        order: 4;
+    }
+}
+
+.footer__link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "GilroyMedium", sans-serif;
+    color: #FFFFFF;
+}
+
+.footer__link .calculator-icon {
+    fill: #fff;
+}
+
+.footer__text {
+    margin-top: 62px;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "GilroyMedium", sans-serif;
+    color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+    .footer__text {
+        margin-top: 58px;
     }
 }

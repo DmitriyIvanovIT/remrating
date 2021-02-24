@@ -21,7 +21,7 @@
     
         <div class="header__info header__block">
             <div class="wrapper header__wrapper">
-                <a href="index.html" class="header__logo">
+                <a href="/" class="header__logo">
                     <img src="./assets/images/icons/logo.svg" alt="logo">
                 </a>
     
@@ -164,8 +164,8 @@
                         <span class="calculator__label-name">Электрика:</span>
                         <select name="select" id="electrician" class="calculator__select">
                             <option value="0">Нет</option>
-                            <option value="300">Частичная замена и подключение</option>
-                            <option value="600">Новая от вводного кабеля</option>
+                            <option value="500">Частичная замена и подключение</option>
+                            <option value="1000">Новая от вводного кабеля</option>
                         </select>
                     </label>
             
@@ -200,7 +200,7 @@
                         <label for="square-bathroom" class="calculator__label calculator__label_rang hide">
                             <span class="calculator__label-name">Площадь санузла:</span>
                             <input type="text" disabled value="1 кв.м" class="calculator__count">
-                            <input type="range" id="square-bathroom" name="range" min="1" max="300" step="1" value="1" class="calculator__range">
+                            <input type="range" id="square-bathroom" name="range" min="1" max="20" step="1" value="1" class="calculator__range">
                         </label>
                     </div>
             
@@ -211,12 +211,6 @@
                                 <option value="false">Нет</option>
                                 <option value="true">Да</option>
                             </select>
-                        </label>
-                
-                        <label for="square-floor" class="calculator__label calculator__label_rang hide">
-                            <span class="calculator__label-name">Площадь теплых полов:</span>
-                            <input type="text" disabled value="1 кв.м" class="calculator__count">
-                            <input type="range" id="square-floor" name="range" min="1" max="300" step="1" value="1" class="calculator__range">
                         </label>
                     </div>
             
@@ -235,12 +229,6 @@
                                 <option value="8">8</option>
                                 <option value="9">9</option>
                                 <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                
                             </select>
                         </label>
                 
@@ -537,6 +525,49 @@
             </a>
         </aside>    </div>
 
+    <footer class="footer">
+        <div class="footer__wraper">
+            <div class="footer__left">
+                <a href="/" class="footer__logo">
+                    <img src="./assets/images/logo-footer.png" alt="logo">
+                </a>
+    
+                <a href="add-company.html" class="footer__btn">Добавить компанию +</a>
+            </div>
+    
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="/" class="footer__link">Ремонт квартир</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="map.html" class="footer__link">Карта компаний</a>
+                    </li>
+    
+                    <li class="footer__item">
+                        <a href="reviews.html" class="footer__link">Последние отзывы</a>
+                    </li>
+                    
+                    <li class="footer__item">
+                        <a href="disigne.html" class="footer__link">Дизайн интерьеров</a>
+                    </li>
+                    
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            <svg class="icon calculator-icon">
+                                <use xlink:href="./assets/images/icons/icons.svg#calculator"></use>
+                            </svg>
+                            Калькулятор ремонта
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <p class="footer__text">
+                Отзывы и оценка ремонтных компаний Санкт-Петербурга. 2016-2021
+            </p>
+        </div>
+    </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js" type="module"></script>
 </body>
